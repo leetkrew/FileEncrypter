@@ -48,16 +48,16 @@
             this.txtEncryptedFile = new System.Windows.Forms.TextBox();
             this.txtPassPhrase = new System.Windows.Forms.TextBox();
             this.txtPrivateKeyFile = new System.Windows.Forms.TextBox();
-            this.btnDisclaimer = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnDisclaimer = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -82,7 +82,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(683, 198);
-            this.tabControl1.TabIndex = 18;
+            this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
             // 
@@ -106,7 +106,7 @@
             this.btnBrowseInputFile.Location = new System.Drawing.Point(569, 90);
             this.btnBrowseInputFile.Name = "btnBrowseInputFile";
             this.btnBrowseInputFile.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseInputFile.TabIndex = 23;
+            this.btnBrowseInputFile.TabIndex = 7;
             this.btnBrowseInputFile.Text = "Browse";
             this.btnBrowseInputFile.UseVisualStyleBackColor = true;
             this.btnBrowseInputFile.Click += new System.EventHandler(this.btnBrowseInputFile_Click);
@@ -134,7 +134,7 @@
             this.btnPublicKeyBrowse.Location = new System.Drawing.Point(569, 39);
             this.btnPublicKeyBrowse.Name = "btnPublicKeyBrowse";
             this.btnPublicKeyBrowse.Size = new System.Drawing.Size(75, 23);
-            this.btnPublicKeyBrowse.TabIndex = 20;
+            this.btnPublicKeyBrowse.TabIndex = 5;
             this.btnPublicKeyBrowse.Text = "Browse";
             this.btnPublicKeyBrowse.UseVisualStyleBackColor = true;
             this.btnPublicKeyBrowse.Click += new System.EventHandler(this.btnPublicKeyBrowse_Click);
@@ -145,14 +145,14 @@
             this.txtPublicKeyFile.Name = "txtPublicKeyFile";
             this.txtPublicKeyFile.ReadOnly = true;
             this.txtPublicKeyFile.Size = new System.Drawing.Size(540, 22);
-            this.txtPublicKeyFile.TabIndex = 19;
+            this.txtPublicKeyFile.TabIndex = 4;
             // 
             // btnEncrypt
             // 
             this.btnEncrypt.Location = new System.Drawing.Point(569, 119);
             this.btnEncrypt.Name = "btnEncrypt";
             this.btnEncrypt.Size = new System.Drawing.Size(75, 23);
-            this.btnEncrypt.TabIndex = 18;
+            this.btnEncrypt.TabIndex = 8;
             this.btnEncrypt.Text = "Encrypt";
             this.btnEncrypt.UseVisualStyleBackColor = true;
             this.btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
@@ -163,7 +163,7 @@
             this.txtInputFile.Name = "txtInputFile";
             this.txtInputFile.ReadOnly = true;
             this.txtInputFile.Size = new System.Drawing.Size(540, 22);
-            this.txtInputFile.TabIndex = 17;
+            this.txtInputFile.TabIndex = 6;
             // 
             // tabPage2
             // 
@@ -216,7 +216,7 @@
             this.btnDecrypt.Location = new System.Drawing.Point(569, 119);
             this.btnDecrypt.Name = "btnDecrypt";
             this.btnDecrypt.Size = new System.Drawing.Size(75, 23);
-            this.btnDecrypt.TabIndex = 21;
+            this.btnDecrypt.TabIndex = 14;
             this.btnDecrypt.Text = "Decrypt";
             this.btnDecrypt.UseVisualStyleBackColor = true;
             this.btnDecrypt.Click += new System.EventHandler(this.btnDecrypt_Click);
@@ -226,7 +226,7 @@
             this.btnBrowseEncryptedFile.Location = new System.Drawing.Point(569, 90);
             this.btnBrowseEncryptedFile.Name = "btnBrowseEncryptedFile";
             this.btnBrowseEncryptedFile.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseEncryptedFile.TabIndex = 20;
+            this.btnBrowseEncryptedFile.TabIndex = 13;
             this.btnBrowseEncryptedFile.Text = "Browse";
             this.btnBrowseEncryptedFile.UseVisualStyleBackColor = true;
             this.btnBrowseEncryptedFile.Click += new System.EventHandler(this.btnBrowseEncryptedFile_Click);
@@ -236,7 +236,7 @@
             this.btnBrowsePrivateKey.Location = new System.Drawing.Point(569, 39);
             this.btnBrowsePrivateKey.Name = "btnBrowsePrivateKey";
             this.btnBrowsePrivateKey.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowsePrivateKey.TabIndex = 19;
+            this.btnBrowsePrivateKey.TabIndex = 11;
             this.btnBrowsePrivateKey.Text = "Browse";
             this.btnBrowsePrivateKey.UseVisualStyleBackColor = true;
             this.btnBrowsePrivateKey.Click += new System.EventHandler(this.btnBrowsePrivateKey_Click);
@@ -247,7 +247,7 @@
             this.txtEncryptedFile.Name = "txtEncryptedFile";
             this.txtEncryptedFile.ReadOnly = true;
             this.txtEncryptedFile.Size = new System.Drawing.Size(540, 22);
-            this.txtEncryptedFile.TabIndex = 18;
+            this.txtEncryptedFile.TabIndex = 12;
             // 
             // txtPassPhrase
             // 
@@ -255,7 +255,7 @@
             this.txtPassPhrase.Name = "txtPassPhrase";
             this.txtPassPhrase.PasswordChar = '*';
             this.txtPassPhrase.Size = new System.Drawing.Size(95, 22);
-            this.txtPassPhrase.TabIndex = 17;
+            this.txtPassPhrase.TabIndex = 10;
             // 
             // txtPrivateKeyFile
             // 
@@ -263,17 +263,7 @@
             this.txtPrivateKeyFile.Name = "txtPrivateKeyFile";
             this.txtPrivateKeyFile.ReadOnly = true;
             this.txtPrivateKeyFile.Size = new System.Drawing.Size(439, 22);
-            this.txtPrivateKeyFile.TabIndex = 16;
-            // 
-            // btnDisclaimer
-            // 
-            this.btnDisclaimer.Location = new System.Drawing.Point(14, 12);
-            this.btnDisclaimer.Name = "btnDisclaimer";
-            this.btnDisclaimer.Size = new System.Drawing.Size(675, 198);
-            this.btnDisclaimer.TabIndex = 24;
-            this.btnDisclaimer.Text = "button1";
-            this.btnDisclaimer.UseVisualStyleBackColor = true;
-            this.btnDisclaimer.Click += new System.EventHandler(this.btnDisclaimer_Click);
+            this.txtPrivateKeyFile.TabIndex = 9;
             // 
             // tabPage3
             // 
@@ -292,59 +282,14 @@
             this.tabPage3.Text = "About";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // label13
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(459, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(201, 17);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "File Decrypter by RJ Regalado";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(527, 37);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 17);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "www.rjregalado.com";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(459, 97);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(201, 17);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "This program uses library from";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(449, 131);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(211, 17);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "Legion of the Bouncy Castle Inc.";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(562, 114);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 17);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "Bouncy Castle";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(35, 37);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(288, 17);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "openssl genrsa -des3 -out private.pem 2048";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(35, 54);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(423, 17);
+            this.label13.TabIndex = 34;
+            this.label13.Text = "openssl rsa -in private.pem -outform PEM -pubout -out public.pem";
             // 
             // label11
             // 
@@ -355,14 +300,69 @@
             this.label11.TabIndex = 32;
             this.label11.Text = "Use the following commands to Generate PEM certificate";
             // 
-            // label13
+            // label12
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(35, 54);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(423, 17);
-            this.label13.TabIndex = 34;
-            this.label13.Text = "openssl rsa -in private.pem -outform PEM -pubout -out public.pem";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(35, 37);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(288, 17);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "openssl genrsa -des3 -out private.pem 2048";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(562, 114);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(98, 17);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Bouncy Castle";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(449, 131);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(211, 17);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "Legion of the Bouncy Castle Inc.";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(459, 97);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(201, 17);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "This program uses library from";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(527, 37);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(133, 17);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "www.rjregalado.com";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(459, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(201, 17);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "File Decrypter by RJ Regalado";
+            // 
+            // btnDisclaimer
+            // 
+            this.btnDisclaimer.Location = new System.Drawing.Point(14, 12);
+            this.btnDisclaimer.Name = "btnDisclaimer";
+            this.btnDisclaimer.Size = new System.Drawing.Size(675, 198);
+            this.btnDisclaimer.TabIndex = 24;
+            this.btnDisclaimer.Text = "button1";
+            this.btnDisclaimer.UseVisualStyleBackColor = true;
+            this.btnDisclaimer.Click += new System.EventHandler(this.btnDisclaimer_Click);
             // 
             // Form1
             // 

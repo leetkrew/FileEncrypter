@@ -117,6 +117,7 @@ namespace EncryptDecryptFile
             } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, Resources.FormCaption, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                EnableDisableControls(true);
             }
         }
 
@@ -197,6 +198,7 @@ namespace EncryptDecryptFile
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, Resources.FormCaption, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                EnableDisableControls(true);
             }
         }
 
