@@ -128,14 +128,14 @@ namespace EncryptDecryptFile
                 EnableDisableControls(false);
 
                 if (
-                        (!File.Exists(txtPublicKeyFile.Text))
-                        || (!File.Exists(txtInputFile.Text))
+                        (!File.Exists(txtPrivateKeyFile.Text))
+                        || (!File.Exists(txtEncryptedFile.Text))
                         )
                 {
                     throw new Exception("File not found, please check your file and try again!");
                 }
-
-                if (File.Exists(string.Format("{0}.encrypted", txtInputFile.Text)))
+                
+                if (File.Exists(string.Format("{0}", txtEncryptedFile.Text.Substring(0, txtEncryptedFile.Text.Length -10))))
                 {
                     var res = MessageBox.Show("Overwrite Existing File?", Resources.FormCaption, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (res == DialogResult.No)
