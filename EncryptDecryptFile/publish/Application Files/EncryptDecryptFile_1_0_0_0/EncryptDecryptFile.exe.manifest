@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="EncryptDecryptFile.exe" version="1.0.0.0" publicKeyToken="044d890cbc5f9ca0" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="EncryptDecryptFile" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="EncryptDecryptFile.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="2236416">
+      <assemblyIdentity name="BouncyCastle.Crypto" version="1.8.1.0" publicKeyToken="0E99375E54769942" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GYW4W7RL5sbq814C7xHiOokOgJuOwuUyEKStWoWybHA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EncryptDecryptFile.exe" size="22480">
+      <assemblyIdentity name="EncryptDecryptFile" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kKYYYEcsdNdX+qduWB7CbNUq3AVgbs2GqnbVFrMnito=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EncryptDecryptLibrary.dll" size="6144">
+      <assemblyIdentity name="EncryptDecryptLibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/N1vQ2bfiDptEkfiihq7jTdr7TGau7vBwoAT1VOpPDU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="EncryptDecryptFile.exe.config" size="1326">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KQhvshO2wxZNF4U0NReJi/9k9JZPFRnCjVkpgcxzBU4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-3B98NRK\rj" issuerKeyHash="1d1e777701588f546285aa6fed787473d5ff862c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SrcJnUIZ45VANrNxCIQw5xOh0MJV49Ciea8lU7jbO5Q=</DigestValue></Reference></SignedInfo><SignatureValue>gdDos3dE+5/ZdrBQCo/HVcxczr2MZyEvtAcFNIoVzktP9/oRcbegP9ZjlLRTOZ46E1oxRceCxwLJoF4+v6bJY6J2j24sh/RNlfm007urp+WOD16wA6F5I9ewGoWD1jo95EdJN5cPZDCUn5TUas2m/Cf2ed/g+pUiKGEA1DHVrT8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yt0MhbnUTYykA81xsceiXBWNFU0n42+wQXexpuhvDdbhzc4aiPq1pcIjI3T+cha/fSiqAgGA3q96w+bTkACKjvaDK5RH7UrZy5oNYvgksF3vF0P2baMft6F6lQIxLC+lcJ3GfTrMcLRSMZay86MXLjeFgoZ4bMOD3VyPrR04flU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="943bdbb85325af79a2d0e355c2d0a113e730840871b3364095e319429d09b74a" Description="" Url=""><as:assemblyIdentity name="EncryptDecryptFile.exe" version="1.0.0.0" publicKeyToken="044d890cbc5f9ca0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-3B98NRK\rj</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>BTXDJ99OZ6C3aYiij8Mcz5v+Io+Zvbz9C9NPStCy5lg=</DigestValue></Reference></SignedInfo><SignatureValue>WG5DtYiQSCyXSdd82FAc4956IW+Wuw6FGIme6+dMKQLbqZIzwFiS+hkr3i1Y/xkln8Xf0KjuIF6wKNIEdzRzbcXYiYw+2qUtVJ+5WDOOZuJL+NiII72nZ4yQZS4lqvgYfhB/vwsoKzm7fesJYLIfHYWKXTwaEjVFVhQY/+9Cp5g=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yt0MhbnUTYykA81xsceiXBWNFU0n42+wQXexpuhvDdbhzc4aiPq1pcIjI3T+cha/fSiqAgGA3q96w+bTkACKjvaDK5RH7UrZy5oNYvgksF3vF0P2baMft6F6lQIxLC+lcJ3GfTrMcLRSMZay86MXLjeFgoZ4bMOD3VyPrR04flU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQVQYUeGvm55pNYUCFlPehjTANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQARABFAFMASwBUAE8AUAAtADMAQgA5ADgATgBSAEsAXAByAGowHhcNMTcxMjI2MTE0ODA1WhcNMTgxMjI2MTc0ODA1WjAvMS0wKwYDVQQDHiQARABFAFMASwBUAE8AUAAtADMAQgA5ADgATgBSAEsAXAByAGowgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMrdDIW51E2MpAPNcbHHolwVjRVNJ+NvsEF3sabobw3W4c3OGoj6taXCIyN0/nIWv30oqgIBgN6vesPm05AAio72gyuUR+1K2cuaDWL4JLBd7xdD9m2jH7ehepUCMSwvpXCdxn06zHC0UjGWsvOjFy43hYKGeGzDg91cj60dOH5VAgMBAAEwDQYJKoZIhvcNAQELBQADgYEABHfteHj/UxogJyDGorr0TZhUD/DxH8A/UyGRWaP7/5a+qI3euBqMflKLNM9V+nlrvgg7uQUGdKwga5AFNyLYUB71whh78lCLhiwnEEcbS4kRbzomk07Jsef3pD5k41PRkbEapdkjmL8DdWRo7/RZZRWFAWyVHvnSGYMLW8DPSv0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
