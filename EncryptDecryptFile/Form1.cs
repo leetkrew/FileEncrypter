@@ -36,7 +36,7 @@ namespace EncryptDecryptFile
         private void Form1_Load(object sender, EventArgs e)
         {
             
-            btnDisclaimer.Text = "THIS PROGRAM HAS BEEN PROVIDED AS-IS WHERE-IS WITHOUT ANY WARRANTY\n\nTHE USER (YOU) AGREES TO USE THIS PROGRAM AT HIS/HER OWN RISK. THE USER AGREES THAT THE AUTHOR OF THIS PROGRAM (RJ REGALADO) WILL NOT BE HELD LIABLE FOR ANY LOSS AND DAMAGES ON THE USER\'S COMPUTER.\n\nCLICK HERE TO CONTINUE";
+            btnDisclaimer.Text = "I AGREE THAT THIS PROGRAM HAS BEEN PROVIDED 'AS-IS WHERE-IS' WITHOUT ANY IMPLIED WARRANTY\n\nI AGREE TO USE THIS PROGRAM AT MY OWN RISK. I AGREE THAT THE AUTHOR OF THIS PROGRAM (RJ REGALADO) WILL NOT BE HELD LIABLE FOR ANY LOSS AND DAMAGES ON MY COMPUTER. I AGREE NOT TO LOOSE MY CERTIFICATE\n\nCLICK HERE TO CONTINUE";
             
             tabControl1.Visible = false;
             this.Text = Resources.FormCaption;
@@ -45,9 +45,12 @@ namespace EncryptDecryptFile
             txtInputFile.Text = Settings.Default.inputFile;
             txtPrivateKeyFile.Text = Settings.Default.privateKeyFile;
             txtEncryptedFile.Text = Settings.Default.encryptedFile;
+
+            txtPublicKeyDirectory.Text = Settings.Default.publicKeyFile; 
+            txtPrivateKeyDirectory.Text = Settings.Default.privateKeyFile;
         }
 
-        private void btnEncrypt_Click(object sender, EventArgs e)
+        private void btnEncryptFile_Click(object sender, EventArgs e)
         {
             try
             {
@@ -121,7 +124,7 @@ namespace EncryptDecryptFile
             }
         }
 
-        private void btnDecrypt_Click(object sender, EventArgs e)
+        private void btnDecryptFile_Click(object sender, EventArgs e)
         {
             try
             {
@@ -158,7 +161,7 @@ namespace EncryptDecryptFile
                     string encryptedFileB64 = Convert.ToBase64String(encryptedFileBytes);
 
                     bw.ReportProgress(0, "Decrypting Encrypted File...");
-                    var decryptedFileB64 = sec.Decrypt(encryptedFileB64, txtPassPhrase.Text, txtPrivateKeyFile.Text);
+                    var decryptedFileB64 = sec.Decrypt(encryptedFileB64, txtPassPhraseFile.Text, txtPrivateKeyFile.Text);
 
                     bw.ReportProgress(0, "Generating Bytes...");
                     byte[] decryptedFileBytes = Convert.FromBase64String(decryptedFileB64);
@@ -202,7 +205,7 @@ namespace EncryptDecryptFile
             }
         }
 
-        private void btnPublicKeyBrowse_Click(object sender, EventArgs e)
+        private void btnPublicKeyBrowseFile_Click(object sender, EventArgs e)
         {
             Stream myStream = null;
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
@@ -264,7 +267,7 @@ namespace EncryptDecryptFile
             }
         }
 
-        private void btnBrowsePrivateKey_Click(object sender, EventArgs e)
+        private void btnBrowsePrivateKeyFile_Click(object sender, EventArgs e)
         {
             Stream myStream = null;
             OpenFileDialog openFileDialog1 = new OpenFileDialog();

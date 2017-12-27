@@ -34,20 +34,34 @@
             this.btnBrowseInputFile = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnPublicKeyBrowse = new System.Windows.Forms.Button();
+            this.btnPublicKeyBrowseFile = new System.Windows.Forms.Button();
             this.txtPublicKeyFile = new System.Windows.Forms.TextBox();
-            this.btnEncrypt = new System.Windows.Forms.Button();
+            this.btnEncryptFile = new System.Windows.Forms.Button();
             this.txtInputFile = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnDecrypt = new System.Windows.Forms.Button();
+            this.btnDecryptFile = new System.Windows.Forms.Button();
             this.btnBrowseEncryptedFile = new System.Windows.Forms.Button();
-            this.btnBrowsePrivateKey = new System.Windows.Forms.Button();
+            this.btnBrowsePrivateKeyFile = new System.Windows.Forms.Button();
             this.txtEncryptedFile = new System.Windows.Forms.TextBox();
-            this.txtPassPhrase = new System.Windows.Forms.TextBox();
+            this.txtPassPhraseFile = new System.Windows.Forms.TextBox();
             this.txtPrivateKeyFile = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnBrowseInputDirectory = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnPublicKeyBrowseDirectory = new System.Windows.Forms.Button();
+            this.txtPublicKeyDirectory = new System.Windows.Forms.TextBox();
+            this.btnEncryptDirectory = new System.Windows.Forms.Button();
+            this.txtInputDirectory = new System.Windows.Forms.TextBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnDecryptDirectory = new System.Windows.Forms.Button();
+            this.btnBrowseEncryptedDirectory = new System.Windows.Forms.Button();
+            this.btnBrowsePrivateKeyDirectory = new System.Windows.Forms.Button();
+            this.txtEncryptedDirectory = new System.Windows.Forms.TextBox();
+            this.txtPassPhraseDirectory = new System.Windows.Forms.TextBox();
+            this.txtPrivateKeyDirectory = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -61,6 +75,8 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,6 +93,8 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(10, 12);
             this.tabControl1.Name = "tabControl1";
@@ -89,9 +107,9 @@
             this.tabPage1.Controls.Add(this.btnBrowseInputFile);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.btnPublicKeyBrowse);
+            this.tabPage1.Controls.Add(this.btnPublicKeyBrowseFile);
             this.tabPage1.Controls.Add(this.txtPublicKeyFile);
-            this.tabPage1.Controls.Add(this.btnEncrypt);
+            this.tabPage1.Controls.Add(this.btnEncryptFile);
             this.tabPage1.Controls.Add(this.txtInputFile);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
@@ -129,15 +147,15 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "Public Key";
             // 
-            // btnPublicKeyBrowse
+            // btnPublicKeyBrowseFile
             // 
-            this.btnPublicKeyBrowse.Location = new System.Drawing.Point(569, 39);
-            this.btnPublicKeyBrowse.Name = "btnPublicKeyBrowse";
-            this.btnPublicKeyBrowse.Size = new System.Drawing.Size(75, 23);
-            this.btnPublicKeyBrowse.TabIndex = 5;
-            this.btnPublicKeyBrowse.Text = "Browse";
-            this.btnPublicKeyBrowse.UseVisualStyleBackColor = true;
-            this.btnPublicKeyBrowse.Click += new System.EventHandler(this.btnPublicKeyBrowse_Click);
+            this.btnPublicKeyBrowseFile.Location = new System.Drawing.Point(569, 39);
+            this.btnPublicKeyBrowseFile.Name = "btnPublicKeyBrowseFile";
+            this.btnPublicKeyBrowseFile.Size = new System.Drawing.Size(75, 23);
+            this.btnPublicKeyBrowseFile.TabIndex = 5;
+            this.btnPublicKeyBrowseFile.Text = "Browse";
+            this.btnPublicKeyBrowseFile.UseVisualStyleBackColor = true;
+            this.btnPublicKeyBrowseFile.Click += new System.EventHandler(this.btnPublicKeyBrowseFile_Click);
             // 
             // txtPublicKeyFile
             // 
@@ -147,15 +165,15 @@
             this.txtPublicKeyFile.Size = new System.Drawing.Size(540, 22);
             this.txtPublicKeyFile.TabIndex = 4;
             // 
-            // btnEncrypt
+            // btnEncryptFile
             // 
-            this.btnEncrypt.Location = new System.Drawing.Point(569, 119);
-            this.btnEncrypt.Name = "btnEncrypt";
-            this.btnEncrypt.Size = new System.Drawing.Size(75, 23);
-            this.btnEncrypt.TabIndex = 8;
-            this.btnEncrypt.Text = "Encrypt";
-            this.btnEncrypt.UseVisualStyleBackColor = true;
-            this.btnEncrypt.Click += new System.EventHandler(this.btnEncrypt_Click);
+            this.btnEncryptFile.Location = new System.Drawing.Point(569, 119);
+            this.btnEncryptFile.Name = "btnEncryptFile";
+            this.btnEncryptFile.Size = new System.Drawing.Size(75, 23);
+            this.btnEncryptFile.TabIndex = 8;
+            this.btnEncryptFile.Text = "Encrypt";
+            this.btnEncryptFile.UseVisualStyleBackColor = true;
+            this.btnEncryptFile.Click += new System.EventHandler(this.btnEncryptFile_Click);
             // 
             // txtInputFile
             // 
@@ -170,11 +188,11 @@
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.btnDecrypt);
+            this.tabPage2.Controls.Add(this.btnDecryptFile);
             this.tabPage2.Controls.Add(this.btnBrowseEncryptedFile);
-            this.tabPage2.Controls.Add(this.btnBrowsePrivateKey);
+            this.tabPage2.Controls.Add(this.btnBrowsePrivateKeyFile);
             this.tabPage2.Controls.Add(this.txtEncryptedFile);
-            this.tabPage2.Controls.Add(this.txtPassPhrase);
+            this.tabPage2.Controls.Add(this.txtPassPhraseFile);
             this.tabPage2.Controls.Add(this.txtPrivateKeyFile);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
@@ -211,15 +229,15 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "Private Key";
             // 
-            // btnDecrypt
+            // btnDecryptFile
             // 
-            this.btnDecrypt.Location = new System.Drawing.Point(569, 119);
-            this.btnDecrypt.Name = "btnDecrypt";
-            this.btnDecrypt.Size = new System.Drawing.Size(75, 23);
-            this.btnDecrypt.TabIndex = 14;
-            this.btnDecrypt.Text = "Decrypt";
-            this.btnDecrypt.UseVisualStyleBackColor = true;
-            this.btnDecrypt.Click += new System.EventHandler(this.btnDecrypt_Click);
+            this.btnDecryptFile.Location = new System.Drawing.Point(569, 119);
+            this.btnDecryptFile.Name = "btnDecryptFile";
+            this.btnDecryptFile.Size = new System.Drawing.Size(75, 23);
+            this.btnDecryptFile.TabIndex = 14;
+            this.btnDecryptFile.Text = "Decrypt";
+            this.btnDecryptFile.UseVisualStyleBackColor = true;
+            this.btnDecryptFile.Click += new System.EventHandler(this.btnDecryptFile_Click);
             // 
             // btnBrowseEncryptedFile
             // 
@@ -231,15 +249,15 @@
             this.btnBrowseEncryptedFile.UseVisualStyleBackColor = true;
             this.btnBrowseEncryptedFile.Click += new System.EventHandler(this.btnBrowseEncryptedFile_Click);
             // 
-            // btnBrowsePrivateKey
+            // btnBrowsePrivateKeyFile
             // 
-            this.btnBrowsePrivateKey.Location = new System.Drawing.Point(569, 39);
-            this.btnBrowsePrivateKey.Name = "btnBrowsePrivateKey";
-            this.btnBrowsePrivateKey.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowsePrivateKey.TabIndex = 11;
-            this.btnBrowsePrivateKey.Text = "Browse";
-            this.btnBrowsePrivateKey.UseVisualStyleBackColor = true;
-            this.btnBrowsePrivateKey.Click += new System.EventHandler(this.btnBrowsePrivateKey_Click);
+            this.btnBrowsePrivateKeyFile.Location = new System.Drawing.Point(569, 39);
+            this.btnBrowsePrivateKeyFile.Name = "btnBrowsePrivateKeyFile";
+            this.btnBrowsePrivateKeyFile.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowsePrivateKeyFile.TabIndex = 11;
+            this.btnBrowsePrivateKeyFile.Text = "Browse";
+            this.btnBrowsePrivateKeyFile.UseVisualStyleBackColor = true;
+            this.btnBrowsePrivateKeyFile.Click += new System.EventHandler(this.btnBrowsePrivateKeyFile_Click);
             // 
             // txtEncryptedFile
             // 
@@ -249,13 +267,13 @@
             this.txtEncryptedFile.Size = new System.Drawing.Size(540, 22);
             this.txtEncryptedFile.TabIndex = 12;
             // 
-            // txtPassPhrase
+            // txtPassPhraseFile
             // 
-            this.txtPassPhrase.Location = new System.Drawing.Point(468, 39);
-            this.txtPassPhrase.Name = "txtPassPhrase";
-            this.txtPassPhrase.PasswordChar = '*';
-            this.txtPassPhrase.Size = new System.Drawing.Size(95, 22);
-            this.txtPassPhrase.TabIndex = 10;
+            this.txtPassPhraseFile.Location = new System.Drawing.Point(468, 39);
+            this.txtPassPhraseFile.Name = "txtPassPhraseFile";
+            this.txtPassPhraseFile.PasswordChar = '*';
+            this.txtPassPhraseFile.Size = new System.Drawing.Size(95, 22);
+            this.txtPassPhraseFile.TabIndex = 10;
             // 
             // txtPrivateKeyFile
             // 
@@ -264,6 +282,139 @@
             this.txtPrivateKeyFile.ReadOnly = true;
             this.txtPrivateKeyFile.Size = new System.Drawing.Size(439, 22);
             this.txtPrivateKeyFile.TabIndex = 9;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.btnBrowseInputDirectory);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.btnPublicKeyBrowseDirectory);
+            this.tabPage4.Controls.Add(this.txtPublicKeyDirectory);
+            this.tabPage4.Controls.Add(this.btnEncryptDirectory);
+            this.tabPage4.Controls.Add(this.txtInputDirectory);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(675, 169);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Encrypt Directory";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btnBrowseInputDirectory
+            // 
+            this.btnBrowseInputDirectory.Location = new System.Drawing.Point(574, 94);
+            this.btnBrowseInputDirectory.Name = "btnBrowseInputDirectory";
+            this.btnBrowseInputDirectory.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseInputDirectory.TabIndex = 25;
+            this.btnBrowseInputDirectory.Text = "Browse";
+            this.btnBrowseInputDirectory.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(25, 23);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(74, 17);
+            this.label14.TabIndex = 27;
+            this.label14.Text = "Public Key";
+            // 
+            // btnPublicKeyBrowseDirectory
+            // 
+            this.btnPublicKeyBrowseDirectory.Location = new System.Drawing.Point(574, 43);
+            this.btnPublicKeyBrowseDirectory.Name = "btnPublicKeyBrowseDirectory";
+            this.btnPublicKeyBrowseDirectory.Size = new System.Drawing.Size(75, 23);
+            this.btnPublicKeyBrowseDirectory.TabIndex = 23;
+            this.btnPublicKeyBrowseDirectory.Text = "Browse";
+            this.btnPublicKeyBrowseDirectory.UseVisualStyleBackColor = true;
+            // 
+            // txtPublicKeyDirectory
+            // 
+            this.txtPublicKeyDirectory.Location = new System.Drawing.Point(28, 43);
+            this.txtPublicKeyDirectory.Name = "txtPublicKeyDirectory";
+            this.txtPublicKeyDirectory.ReadOnly = true;
+            this.txtPublicKeyDirectory.Size = new System.Drawing.Size(540, 22);
+            this.txtPublicKeyDirectory.TabIndex = 22;
+            // 
+            // btnEncryptDirectory
+            // 
+            this.btnEncryptDirectory.Location = new System.Drawing.Point(574, 123);
+            this.btnEncryptDirectory.Name = "btnEncryptDirectory";
+            this.btnEncryptDirectory.Size = new System.Drawing.Size(75, 23);
+            this.btnEncryptDirectory.TabIndex = 26;
+            this.btnEncryptDirectory.Text = "Encrypt";
+            this.btnEncryptDirectory.UseVisualStyleBackColor = true;
+            // 
+            // txtInputDirectory
+            // 
+            this.txtInputDirectory.Location = new System.Drawing.Point(28, 94);
+            this.txtInputDirectory.Name = "txtInputDirectory";
+            this.txtInputDirectory.ReadOnly = true;
+            this.txtInputDirectory.Size = new System.Drawing.Size(540, 22);
+            this.txtInputDirectory.TabIndex = 24;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.btnDecryptDirectory);
+            this.tabPage5.Controls.Add(this.btnBrowseEncryptedDirectory);
+            this.tabPage5.Controls.Add(this.btnBrowsePrivateKeyDirectory);
+            this.tabPage5.Controls.Add(this.txtEncryptedDirectory);
+            this.tabPage5.Controls.Add(this.txtPassPhraseDirectory);
+            this.tabPage5.Controls.Add(this.txtPrivateKeyDirectory);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(675, 169);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Decrypt Directory";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // btnDecryptDirectory
+            // 
+            this.btnDecryptDirectory.Location = new System.Drawing.Point(573, 113);
+            this.btnDecryptDirectory.Name = "btnDecryptDirectory";
+            this.btnDecryptDirectory.Size = new System.Drawing.Size(75, 23);
+            this.btnDecryptDirectory.TabIndex = 20;
+            this.btnDecryptDirectory.Text = "Decrypt";
+            this.btnDecryptDirectory.UseVisualStyleBackColor = true;
+            // 
+            // btnBrowseEncryptedDirectory
+            // 
+            this.btnBrowseEncryptedDirectory.Location = new System.Drawing.Point(573, 84);
+            this.btnBrowseEncryptedDirectory.Name = "btnBrowseEncryptedDirectory";
+            this.btnBrowseEncryptedDirectory.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseEncryptedDirectory.TabIndex = 19;
+            this.btnBrowseEncryptedDirectory.Text = "Browse";
+            this.btnBrowseEncryptedDirectory.UseVisualStyleBackColor = true;
+            // 
+            // btnBrowsePrivateKeyDirectory
+            // 
+            this.btnBrowsePrivateKeyDirectory.Location = new System.Drawing.Point(573, 33);
+            this.btnBrowsePrivateKeyDirectory.Name = "btnBrowsePrivateKeyDirectory";
+            this.btnBrowsePrivateKeyDirectory.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowsePrivateKeyDirectory.TabIndex = 17;
+            this.btnBrowsePrivateKeyDirectory.Text = "Browse";
+            this.btnBrowsePrivateKeyDirectory.UseVisualStyleBackColor = true;
+            // 
+            // txtEncryptedDirectory
+            // 
+            this.txtEncryptedDirectory.Location = new System.Drawing.Point(27, 84);
+            this.txtEncryptedDirectory.Name = "txtEncryptedDirectory";
+            this.txtEncryptedDirectory.ReadOnly = true;
+            this.txtEncryptedDirectory.Size = new System.Drawing.Size(540, 22);
+            this.txtEncryptedDirectory.TabIndex = 18;
+            // 
+            // txtPassPhraseDirectory
+            // 
+            this.txtPassPhraseDirectory.Location = new System.Drawing.Point(472, 33);
+            this.txtPassPhraseDirectory.Name = "txtPassPhraseDirectory";
+            this.txtPassPhraseDirectory.PasswordChar = '*';
+            this.txtPassPhraseDirectory.Size = new System.Drawing.Size(95, 22);
+            this.txtPassPhraseDirectory.TabIndex = 16;
+            // 
+            // txtPrivateKeyDirectory
+            // 
+            this.txtPrivateKeyDirectory.Location = new System.Drawing.Point(27, 33);
+            this.txtPrivateKeyDirectory.Name = "txtPrivateKeyDirectory";
+            this.txtPrivateKeyDirectory.ReadOnly = true;
+            this.txtPrivateKeyDirectory.Size = new System.Drawing.Size(439, 22);
+            this.txtPrivateKeyDirectory.TabIndex = 15;
             // 
             // tabPage3
             // 
@@ -382,6 +533,10 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
@@ -396,19 +551,19 @@
         private System.Windows.Forms.Button btnBrowseInputFile;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnPublicKeyBrowse;
+        private System.Windows.Forms.Button btnPublicKeyBrowseFile;
         private System.Windows.Forms.TextBox txtPublicKeyFile;
-        private System.Windows.Forms.Button btnEncrypt;
+        private System.Windows.Forms.Button btnEncryptFile;
         private System.Windows.Forms.TextBox txtInputFile;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnDecrypt;
+        private System.Windows.Forms.Button btnDecryptFile;
         private System.Windows.Forms.Button btnBrowseEncryptedFile;
-        private System.Windows.Forms.Button btnBrowsePrivateKey;
+        private System.Windows.Forms.Button btnBrowsePrivateKeyFile;
         private System.Windows.Forms.TextBox txtEncryptedFile;
-        private System.Windows.Forms.TextBox txtPassPhrase;
+        private System.Windows.Forms.TextBox txtPassPhraseFile;
         private System.Windows.Forms.TextBox txtPrivateKeyFile;
         private System.Windows.Forms.Button btnDisclaimer;
         private System.Windows.Forms.TabPage tabPage3;
@@ -420,6 +575,20 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Button btnBrowseInputDirectory;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnPublicKeyBrowseDirectory;
+        private System.Windows.Forms.TextBox txtPublicKeyDirectory;
+        private System.Windows.Forms.Button btnEncryptDirectory;
+        private System.Windows.Forms.TextBox txtInputDirectory;
+        private System.Windows.Forms.Button btnDecryptDirectory;
+        private System.Windows.Forms.Button btnBrowseEncryptedDirectory;
+        private System.Windows.Forms.Button btnBrowsePrivateKeyDirectory;
+        private System.Windows.Forms.TextBox txtEncryptedDirectory;
+        private System.Windows.Forms.TextBox txtPassPhraseDirectory;
+        private System.Windows.Forms.TextBox txtPrivateKeyDirectory;
     }
 }
 
